@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Body Fat</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="CheatFit.html">Body Fat</a></li>
+        <li><a href="diet_plan.html">Diet</a></li>
+        <li><a href="#">Gym Trainer</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Body Fat Percentage</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the body fat percentage
+          <br>
+        </h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="Age"><b>Age</b></label>
+              <br>
+              <input placeholder="Age" name="Age" id="Age" type="number" class="validate">
+            </div>
+            <div class="input-field col s4">
+
+              <label for="Weight"><b>Weight </b></label>
+              <br>
+              <input id="Weight" name="Weight" placeholder="Weight in kg" type="number" class="validate">
+
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Height"><b>Height</b></label>
+              <br>
+              <input id="Height" name="Height" placeholder="Height in cm" type="number" class="validate">
+
+            </div>
+            <div class="input-field col s4">
+              <label for="Neck"><b>Neck</b></label>
+              <br>
+              <input placeholder="Neck" name="Neck" id="Neck" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Chest"><b>Chest</b></label>
+              <br>
+              <input placeholder="Chest" name="Chest" id="Chest" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Abdomen"><b>Abdomen</b></label>
+              <br>
+              <input placeholder="Abdomen" name="Abdomen" id="Abdomen" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Hip"><b>Hip</b></label>
+              <br>
+              <input placeholder="Hip" name="Hip" id="Hip" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Thigh"><b>Thigh</b></label>
+              <br>
+              <input placeholder="Thigh" name="Thigh" id="Thigh" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Biceps"><b>Biceps</b></label>
+              <br>
+              <input placeholder="Biceps" name="Biceps" id="Biceps" type="number" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="Forearm"><b>Forearm</b></label>
+              <br>
+              <input placeholder="Forearm" name="Forearm" id="Forearm" type="number" class="validate">
+            </div>
+
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Percentage </button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      {{pred}}<br>
+
+    </div>
+  </div>
+
+
+  <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+          <div class="col l3 s12">
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
